@@ -1,0 +1,136 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"    
+	android:background="?mybackground">
+<LinearLayout 	    
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    tools:context=".test" >
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal"
+	    	android:layout_marginTop="10dp" >
+	        <CheckBox 
+			     android:id="@+id/check1"
+			     android:layout_width="wrap_content" 
+			     android:layout_height="wrap_content"
+			     android:textColor="?text_image1"
+			     android:textSize="15sp"
+			     android:checked="false"
+			     style="@style/CustomCheckboxTheme2"
+			     android:text="不计起始  "
+			     ></CheckBox>
+		    <EditText
+		        android:id="@+id/data1"
+		        android:layout_width="110dp"
+		        android:layout_height="30dp"
+		        android:focusable="false"
+		        android:textColor="?text_image1"
+		        android:textSize="15sp"
+		        android:gravity="center"
+		        android:background="@drawable/editshape"  
+		        android:hint="选择日期" />
+		    <EditText
+		        android:id="@+id/time1"
+		        android:layout_width="90dp"
+		        android:layout_height="30dp"
+		        android:focusable="false"
+		        android:textColor="?text_image1"
+		        android:textSize="15sp"
+		        android:gravity="center"
+		        android:background="@drawable/editshape"  
+		        android:hint="选择时间" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dp" >
+	        <CheckBox 
+			     android:id="@+id/check2"
+			     android:layout_width="wrap_content" 
+			     android:layout_height="wrap_content"
+			     android:textSize="15sp"
+			     android:textColor="?text_image1"
+			     android:checked="false"
+			     style="@style/CustomCheckboxTheme2"
+			     android:text="不计截止  "
+			     ></CheckBox>
+		    <EditText
+		        android:id="@+id/data2"
+		        android:layout_width="110dp"
+		        android:layout_height="30dp"
+		        android:focusable="false"
+		        android:textColor="?text_image1"
+		        android:textSize="15sp"
+		        android:gravity="center"
+		        android:background="@drawable/editshape"  
+		        android:hint="选择日期" />
+		    <EditText
+		        android:id="@+id/time2"
+		        android:layout_width="90dp"
+		        android:layout_height="30dp"
+		        android:focusable="false"
+		        android:textColor="?text_image1"
+		        android:textSize="15sp"
+		        android:gravity="center"
+		        android:background="@drawable/editshape"  
+		        android:hint="选择时间" />
+	    </LinearLayout>
+	    
+	    <Button 
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/fordata"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:text="   查询数据   "
+	        android:textColor="#FFFFFF"
+	        android:layout_gravity="center"
+	        android:background="@drawable/login_button_selector"
+	        android:onClick="forData"
+	        />
+
+	    
+	    
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_margin="10dp">
+	        <com.github.mikephil.charting.charts.LineChart
+			    android:id="@+id/chart1"
+			    android:layout_width="match_parent"
+			    android:layout_height="320dip"
+			    android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_margin="10dp">
+	        <com.github.mikephil.charting.charts.LineChart
+			    android:id="@+id/chart2"
+			    android:layout_width="match_parent"
+			    android:layout_height="320dip"
+			    android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+	    	    
+
+	    
+	    
+	   
+	
+	</LinearLayout>
+
+</ScrollView>

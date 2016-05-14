@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?mybackground">
+    	<TextView
+	    	android:text="调试记录"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="40dip"
+	        android:background="?title"
+	        android:textColor="?text_image1"
+	        android:gravity="center" 
+	        android:textSize="20sp"/>
+	    <LinearLayout android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp">
+		    <TextView android:id="@+id/feedback_title"
+		    	android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:textSize="19dp"
+			   	android:textColor="?text_image1"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:text="请输入您的调试记录，方便我们及时维护。">
+		    </TextView>
+		    <LinearLayout android:orientation="horizontal" 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="10dp" >
+		    	<Spinner android:id="@+id/feedback_type_spinner"
+			        android:layout_width="wrap_content"
+			        android:layout_height="50dp" 
+			        android:layout_weight="1"
+			        android:focusable="true"
+			        android:entries="@array/feedback_type"/>
+			</LinearLayout>
+		     <RelativeLayout android:layout_width="fill_parent"
+		     	android:layout_height="fill_parent">
+			     <EditText android:id="@+id/feedback_content"
+			         android:layout_width="fill_parent"
+			         android:layout_height="fill_parent"
+			         android:maxEms="10"
+			         android:minEms="10" 
+			         android:hint="请输入您的调试记录（字数400以内）"
+			         android:maxLength="400"
+			         android:gravity="top"
+			         android:layout_marginBottom="50dip"/>
+				<Button android:id="@+id/feedback_submit" 
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:text="提交记录"
+					android:textSize="19dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_alignParentBottom="true"
+					android:onClick="onClick"/>
+		     </RelativeLayout>
+		</LinearLayout>
+</LinearLayout>

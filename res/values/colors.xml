@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="day_user">#7f9bbb</color>
+  <color name="night_user">#4d4d4d</color>
+  <color name="day_text">#06204c</color>
+  <color name="night_text">#ffffff</color>
+  <color name="drawerday_text">#18325c</color>
+  <color name="drawernight_text">#ffffff</color>
+  <color name="opinionday_title">#EDEDED</color>
+  <color name="opinionnight_title">#363433</color>
+  <color name="YAxix">#4e82f8</color>
+</resources>

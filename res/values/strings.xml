@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maglevator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">登  录</string>
+    <string name="user">账号</string>
+    <string name="pass">密码</string>
+    <string name="signin">账号注册</string>
+    <string name="forget">忘记密码</string>
+    <string name="type">用户类型</string>
+    <string name="yjbj1">"        "传统电梯依靠钢丝绳与曳引轮绳槽之间的摩擦力来驱动轿厢升降，因此面临机械驱动系统磨损严重，维修成本高，运行速度慢，能耗大等一系列问题，传统电梯行业急需引入新技术来突破其在物理结构、设计上的束缚。而磁悬浮技术具有无摩擦、无磨损、寿命长、低功耗、无噪声等优点，并已成功应用于铁路交通、航天航空等众多领域，将磁悬浮技术引入电梯领域，将去除传统电梯的曳引机、钢丝导轨、配重、导向轮等复杂的机械设备，采用电磁力实现直接驱动，具有高速、节能、低噪等诸多优点，因此磁悬浮电梯将成为当前电梯发展的趋势。</string>
+    <string name="yjbj2">"        "国内外对于磁悬浮电梯的研究目前尚处于初级阶段。日本东芝电器公司首先开展磁悬浮电梯的研制工作，并在磁悬浮电梯的开发上取得一定成果；德国著名的蒂森克虏伯日前也公开了下一代电梯计划，开始着手研制磁悬浮电梯并预期在2016年底推出原型；国内在磁悬浮技术领域的研究上起步较晚，研究水平相比于主要的国家相对落后。不过武汉智能电梯有限公司已投入近千万元人民币建造中国最高的电梯试验塔，用于新产品安全性能等方面的试验，其中有一个井道用于磁悬浮电梯试验。</string>
+    <string name="xmjj1">"        "为紧跟当前电梯发展的趋势潮流，促进我国在磁悬浮电梯方面的研究，本项目自主设计并搭建了磁悬浮电梯仿真实物模型，开发了相应的状态检测及控制平台。其中，磁悬浮电梯仿真实物模型主要由仿真轿厢、直线电机、固定支架三部分组成。磁悬浮电梯状态检测及控制平台由传感器检测装置、信号无线通信模块、Android—Web信息平台、阿里云端测试数据库、核心控制器、安全制动装置六部分组成。</string>
+    <string name="xmjj2">"        "其中，仿真实物模型主要搭建了一个基于直线电机的机械装置，来模拟轿厢的仿真运行过程。控制平台主要是通过电机智能控制电路，通过SPWM波调整直线电机的频率和转速，实现对轿厢的控制。而状态检测平台，主要通过位于电梯轿厢上的传感器检测模块，对电梯运行过程中的相关参数如加速度，速度进行检测，通过无线信号发射模块将其发送给阿里云端数据库对参数信息进行记录，同时支持Android—Web信息平台的实时显示，便于后期根据测试参数对控制系统进行改进。</string>
+    <drawable name="clr_normal">#000000</drawable>
+ 	<drawable name="clr_pressed">#33EAEAEA</drawable>
+ 	<drawable name="clr_normal1">#FD0612</drawable>
+ 	<drawable name="clr_pressed1">#FC562A</drawable>
+
+</resources>

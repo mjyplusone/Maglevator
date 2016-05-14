@@ -1,0 +1,91 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"    
+	android:background="?mybackground">
+	<LinearLayout 	    
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    tools:context=".test" >
+	  
+	    <!--  
+	    <Button 
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/fordata"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:text="   查询数据   "
+	        android:textColor="#FFFFFF"
+	        android:layout_gravity="center"
+	        android:background="@drawable/login_button_selector"
+	        android:onClick="forData"
+	        /> 
+	    -->
+
+	    
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="电梯实时运行参数"
+	        android:textSize="30sp"
+	        android:textColor="?text_image1" />
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_margin="10dp"
+	        android:orientation="horizontal"
+	        android:gravity="center" >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:text="当前楼层："
+		        android:textSize="20sp"
+		        android:textColor="?text_image1" />
+		    <TextView
+		        android:id="@+id/louceng"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=""
+		        android:textSize="20sp"
+		        android:textColor="?text_image1" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_margin="10dp">
+	        <com.github.mikephil.charting.charts.LineChart
+			    android:id="@+id/chart2"
+			    android:layout_width="match_parent"
+			    android:layout_height="320dip"
+			    android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_margin="10dp">
+	        <com.github.mikephil.charting.charts.LineChart
+			    android:id="@+id/chart1"
+			    android:layout_width="match_parent"
+			    android:layout_height="320dip"
+			    android:layout_gravity="center_vertical" />
+	    </LinearLayout>
+	    
+
+	    
+
+	   
+	
+	</LinearLayout>
+
+</ScrollView>

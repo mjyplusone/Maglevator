@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_type">
+        <item>电机故障</item>
+        <item>电流过大</item>
+        <item>尖峰电压</item>
+        <item>断电反压</item>
+        <item>其他。。。</item>
+    </string-array>
+  
+ 
+</resources>

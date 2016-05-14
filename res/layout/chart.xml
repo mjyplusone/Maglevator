@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30px"
+    android:background="?mybackground">
+    
+	
+	    
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="chart" 
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="#FFFFFACD"
+        />
+
+    
+    <com.github.mikephil.charting.charts.PieChart
+	  android:id="@+id/spread_pie_chart"
+	  android:layout_width="match_parent"
+	  android:layout_height="320dip"
+	  android:layout_below="@id/text1"
+	  android:layout_gravity="center_horizontal" />
+    
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:onClick="onClick"
+	  	android:text="button"
+	  	android:layout_below="@id/spread_pie_chart" />
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:layout_below="@id/button"/>
+
+
+</RelativeLayout>

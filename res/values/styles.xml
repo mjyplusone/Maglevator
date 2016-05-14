@@ -1,0 +1,71 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+
+	<style name="mystyle" parent="android:Theme">
+	</style>
+	
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">  
+       <item name="android:button">@drawable/checkbox_style</item>  
+    </style>
+    
+     <style name="CustomCheckboxTheme2" parent="@android:style/Widget.CompoundButton.CheckBox">  
+       <item name="android:button">@drawable/checkbox_style2</item>  
+    </style>
+
+    <!-- 夜间模式切换 -->
+    <style name="normalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    	<item name="mybackground">@drawable/main_bkday</item> 
+    	<item name="user">@drawable/main_userday</item> 
+    	<item name="usertext">@color/day_user</item> 
+    	<item name="drawer">@drawable/main_setday</item> 
+    	<item name="welcome">@drawable/main_welday</item> 
+    	<item name="login_image1">@drawable/main_picday1</item>  
+    	<item name="login_image2">@drawable/main_picday2</item>   
+    	<item name="login_image3">@drawable/main_picday3</item>   
+    	<item name="login_image4">@drawable/main_picday4</item>   
+    	<item name="text_image1">@color/day_text</item> 
+    	<item name="text_image2">@color/day_text</item> 
+    	<item name="text_image3">@color/day_text</item> 
+    	<item name="text_image4">@color/day_text</item>
+    	<item name="drawer_iot">@drawable/drawer_iotday</item> 
+    	<item name="drawer_text">@color/drawerday_text</item>   
+    	<item name="title">@color/opinionday_title</item>   
+    </style>
+
+    <style name="nightTheme" parent="@android:style/Theme.Black.NoTitleBar">
+       <item name="mybackground">@drawable/main_bknight</item>  
+       <item name="user">@drawable/main_usernight</item> 
+    	<item name="usertext">@color/night_user</item> 
+    	<item name="drawer">@drawable/main_setnight</item> 
+    	<item name="welcome">@drawable/main_welnight</item> 
+    	<item name="login_image1">@drawable/main_picnight1</item>  
+    	<item name="login_image2">@drawable/main_picnight2</item>  
+    	<item name="login_image3">@drawable/main_picnight3</item>  
+    	<item name="login_image4">@drawable/main_picnight4</item>  
+    	<item name="text_image1">@color/night_text</item> 
+    	<item name="text_image2">@color/night_text</item> 
+    	<item name="text_image3">@color/night_text</item> 
+    	<item name="text_image4">@color/night_text</item> 
+    	<item name="drawer_iot">@drawable/drawer_iotnight</item> 
+    	<item name="drawer_text">@color/drawernight_text</item>  
+    	<item name="title">@color/opinionnight_title</item>    
+    </style>
+
+</resources>

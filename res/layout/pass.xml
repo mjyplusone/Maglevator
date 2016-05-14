@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="?mybackground"
+    android:clickable="true"  >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55" >      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal" >	
+       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="39" >       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="horizontal" >
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="fill_parent"></LinearLayout>
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="fill_parent"
+            android:background="@drawable/red">		    
+		</LinearLayout>
+		<TextView
+		    android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="fill_parent" 
+            android:gravity="center"      
+            android:text=" 修改密码"
+            android:textColor="?drawer_text"
+            android:textSize="15sp"/>
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="150"
+            android:layout_height="fill_parent"></LinearLayout>
+    </LinearLayout>
+    
+    <!-- 分割线 -->
+    <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="1dp"
+	        android:layout_marginLeft="35dp"
+	        android:layout_marginRight="35dp"
+	        android:background="#a7b8ca"
+	        android:layout_marginTop="5dp" ></LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="180"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="42"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="186"
+            android:orientation="vertical">
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="horizontal">	            
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="3"
+	                android:orientation="vertical" >
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="1" ></LinearLayout>
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="2"
+			             android:orientation="horizontal" >
+			            <TextView 
+		                    android:layout_width="0dp"
+			                android:layout_height="fill_parent"
+			                android:layout_weight="60" 
+			                android:gravity="center"
+		                    android:text="原密码："
+		                    android:textColor="?drawer_text"/>
+		                <EditText 
+		                    android:id="@+id/user"
+		                    android:layout_width="0dp"
+			                android:layout_height="fill_parent"
+			                android:background="#FFFFFF"
+			                android:layout_weight="100"
+			                android:focusable="true" />
+			            <LinearLayout 
+			                android:layout_width="0dp"
+			                android:layout_height="fill_parent"
+			                android:layout_weight="20"></LinearLayout>		                
+		            </LinearLayout>
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="1" ></LinearLayout>
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout
+	            android:id="@+id/personal" 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="2"
+		             android:orientation="horizontal" >
+	                <TextView 
+		                    android:layout_width="0dp"
+			                android:layout_height="fill_parent"
+			                android:layout_weight="60" 
+			                android:gravity="center"
+		                    android:text="新密码："
+		                    android:textColor="?drawer_text"/>
+	                <EditText 
+	                    android:id="@+id/nuser"
+	                    android:layout_width="0dp"
+		                android:layout_height="fill_parent"
+		                android:background="#FFFFFF"
+		                android:layout_weight="100"
+		                android:focusable="true" />
+		            <LinearLayout 
+		                android:layout_width="0dp"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="20"></LinearLayout>	
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="2"
+		             android:orientation="horizontal" >
+	                <TextView 
+		                    android:layout_width="0dp"
+			                android:layout_height="fill_parent"
+			                android:layout_weight="60" 
+			                android:gravity="center"
+		                    android:text="再次输入："
+		                    android:textColor="?drawer_text"/>
+	                <EditText 
+	                    android:id="@+id/again"
+	                    android:layout_width="0dp"
+		                android:layout_height="fill_parent"
+		                android:background="#FFFFFF"
+		                android:layout_weight="100"
+		                android:focusable="true" />
+		            <LinearLayout 
+		                android:layout_width="0dp" 
+		                android:layout_height="fill_parent"
+		                android:layout_weight="20"></LinearLayout>	
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+		    <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="2"
+		             android:orientation="horizontal" >
+		            <LinearLayout
+		                android:layout_width="0dp"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="10"></LinearLayout>
+		            <Button
+		                android:id="@+id/pass_btn"
+		                android:layout_width="0dp"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="7"
+			            android:background="@drawable/login_button_selector"
+			            android:text="确  认"
+			            android:textColor="#FFFFFF"
+			            android:gravity="center"
+			            android:onClick="newpass"/>
+		            <LinearLayout
+		                android:layout_width="0dp"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="10"></LinearLayout>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            
+		        </LinearLayout>
+        
+		    
+	       
+	        
+	        
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp" ></LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1.5" >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text=""
+	                    android:textColor="?drawer_text"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+
+	        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="42"></LinearLayout>
+        
+    </LinearLayout>
+        
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="132" >
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>
+

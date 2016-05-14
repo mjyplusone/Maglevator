@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="?mybackground"
+    android:clickable="true"  >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55" >      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal" >	
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="fill_parent"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="13"
+            android:layout_height="fill_parent"
+            android:background="?drawer_iot"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="fill_parent"></LinearLayout>      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="39" >       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="horizontal" >
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="fill_parent"></LinearLayout>
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="fill_parent"
+            android:background="@drawable/red">		    
+		</LinearLayout>
+		<TextView
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"		    
+            android:gravity="center"      
+            android:text=" 设置"
+            android:textColor="?drawer_text"
+            android:textSize="17sp"/>
+		<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="130"
+            android:layout_height="fill_parent"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="fill_parent"></LinearLayout>
+    </LinearLayout>
+    
+    <!-- 分割线 -->
+    <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="1dp"
+	        android:layout_marginLeft="35dp"
+	        android:layout_marginRight="35dp"
+	        android:background="#a7b8ca"
+	        android:layout_marginTop="5dp" ></LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="180"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="42"></LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="186"
+            android:orientation="vertical">
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="horizontal">	            
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="3"
+	                android:orientation="vertical" >
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="1" ></LinearLayout>
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="1.5" >
+		                <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="  夜间模式"
+		                    android:textColor="?drawer_text"/>
+		            </LinearLayout>
+		            <LinearLayout
+		                 android:layout_width="fill_parent"
+			             android:layout_height="0dp"
+			             android:layout_weight="1" ></LinearLayout>
+	            </LinearLayout>
+	            <!-- 开关 -->
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" >
+	                <CheckBox 
+					     android:id="@+id/switch1"
+					     android:layout_gravity="center"
+					     android:layout_width="wrap_content" 
+					     android:layout_height="wrap_content"
+					     android:checked="false"
+					     style="@style/CustomCheckboxTheme"
+					     android:onClick="Theme" ></CheckBox>
+	            </LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout
+	            android:id="@+id/personal" 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical"
+	            android:onClick="personal">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1.5" >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="  个人资料"
+	                    android:textColor="?drawer_text"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/pass"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical"
+	            android:onClick="pass">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1.5" >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="  修改密码"
+	                    android:textColor="?drawer_text"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/version"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical"	            
+	            android:onClick="logout">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1.5" >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="  注销用户"
+	                    android:textColor="?drawer_text"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	        <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/about"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical"
+	            android:onClick="about">
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1.5" >
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="  关于我们"
+	                    android:textColor="?drawer_text"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                 android:layout_width="fill_parent"
+		             android:layout_height="0dp"
+		             android:layout_weight="1" ></LinearLayout>
+	        </LinearLayout>
+	         <!-- 分割线 -->
+		    <LinearLayout 
+		            android:layout_width="fill_parent"
+		        	android:layout_height="1dp"
+			        android:background="#a7b8ca" ></LinearLayout>
+	        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="42"></LinearLayout>
+        
+    </LinearLayout>
+        
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="132" >
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>
+
